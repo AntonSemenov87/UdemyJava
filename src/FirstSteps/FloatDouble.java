@@ -1,3 +1,5 @@
+package FirstSteps;
+
 public class FloatDouble {
     public static void main(String[] args) {
         float myFloatMinValue = Float.MIN_VALUE;
