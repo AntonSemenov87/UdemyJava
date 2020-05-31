@@ -35,6 +35,15 @@ public class ByteShortLong {
         long bigLongLiteralValue = 2_147_483_647_234L;
 
 
+        // Task
+        byte age = 10;
+        short year= 20;
+        int one = 50;
+        long total = 50_000 + (10 * (age + year + one));
+        System.out.println(total);
+
+        short shortTotal = (short) (1000 + 10 * (age + year + one));
+
 
 
 
