@@ -1,8 +1,7 @@
 package Section4;
 
-public class Methods {
+public class ReturnMethod {
     public static void main(String[] args) {
-
         System.out.println("Running first example:");
 //        boolean gameOver = true;
 //        int score = 800;
@@ -17,7 +16,7 @@ public class Methods {
 //        score = 10_000;
 //        levelCompleted = 8;
 //        bonus = 200;
-        calculateScore(true, 10_000, 8, 200);
+        calculateScore(false, 10_000, 8, 200);
         // or: calculateScore(gameOver, score, levelCompleted, bonus);
 
 
@@ -25,13 +24,17 @@ public class Methods {
     }
 
 
-    public static void calculateScore (boolean gameOver, int score, int levelCompleted, int bonus) {
-
+    public static int calculateScore (boolean gameOver, int score, int levelCompleted, int bonus) {
+        //int finalScore;
         if (gameOver) {
-            int finalScore = score + (levelCompleted * bonus);
+           int finalScore = score + (levelCompleted * bonus);
             finalScore += 1000;
             System.out.println("Your final score is " + finalScore + "\n");
+            return finalScore;
         }
+            return -1;
+
+       // return finalScore;
+    }
     }
 
-}
