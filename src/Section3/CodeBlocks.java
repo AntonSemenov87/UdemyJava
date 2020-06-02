@@ -1,4 +1,4 @@
-package FirstSteps;
+package Section3;
 
 public class CodeBlocks {
     public static void main(String[] args) {
@@ -15,15 +15,25 @@ public class CodeBlocks {
 
         // System.out.println("This was executed as well");
 
-        int finalScore = 0;
+
 
         if (gameOver == true) {
-            finalScore = score + (levelCompleted * bonus);
+            int finalScore = score + (levelCompleted * bonus);
             System.out.println("Final score is " + finalScore);
         }
 
-        int savedFinalScore = finalScore;
-        System.out.println(savedFinalScore);
 
+
+        // --------------------------------------------------------------------
+
+        boolean newGameOver = true;
+        int newScore = 10_000;
+        int newLevelCompleted = 8;
+        int newBonus = 200;
+
+        if (newGameOver == true) {
+            int finalScore = newScore + (newLevelCompleted * newBonus);
+            System.out.println("new Final score is " + finalScore);
+        }
     }
 }
