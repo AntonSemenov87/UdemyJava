@@ -9,8 +9,6 @@ public class MethodsTask1 {
         position = calculateHighScorePosition(900);
         displayHightScorePosition("Bob", position);
 
-
-
     }
 
     public static void displayHightScorePosition (String playerName, int position) {
