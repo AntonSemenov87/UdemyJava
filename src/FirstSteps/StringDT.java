@@ -27,5 +27,8 @@ public class StringDT {
         lastString = lastString + doubleNumber;
         System.out.println("\nLast String is equal to " + lastString);
 
+        String c = "This is " + "a String";
+        System.out.println(c);
+
     }
 }
