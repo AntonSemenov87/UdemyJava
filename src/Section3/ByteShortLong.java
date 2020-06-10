@@ -1,4 +1,4 @@
-package FirstSteps;
+package Section3;
 
 public class ByteShortLong {
     public static void main(String[] args) {
