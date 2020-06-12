@@ -3,7 +3,7 @@ package Section4;
 public class SecondsMinutes_task {
     public static void main(String[] args) {
 
-        getDurationString(3456);
+        getDurationString(123);
 
     }
 
@@ -13,7 +13,23 @@ public class SecondsMinutes_task {
         }
         int hours = minutes / 60;
         int remainingMinutes = minutes % 60;
-        System.out.println(minutes + "min " + seconds + "sec = " + hours + "hr " + remainingMinutes + "m " + seconds + "s");
+
+        // fixing 01 --> adding ZERO if hour, min or seconds is less than 10
+        String hourString = hours + "h";
+        if (hours < 10) {
+            hourString = "0" + hourString;
+        }
+        String minutesString = minutes + "m";
+        if (minutes < 10) {
+            minutesString = "0" + minutesString;
+        }
+        String secondsString = seconds + "s";
+        if (seconds < 10) {
+            secondsString = "0" + secondsString;
+        }
+
+        // Printing result:
+        System.out.println(minutes + "m " + seconds + "s = " + hourString + " " + minutesString + " " + secondsString);
     }
     public static void getDurationString (int seconds) {
         if (seconds < 0) {
