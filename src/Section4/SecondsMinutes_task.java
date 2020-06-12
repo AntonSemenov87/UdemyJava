@@ -1,15 +1,18 @@
 package Section4;
 
 public class SecondsMinutes_task {
+    private static final String INVALID_VALUE_MESSAGE = "Invalid Value";
+
     public static void main(String[] args) {
 
-        getDurationString(123);
+        System.out.println(getDurationString(65, 45));
+        System.out.println(getDurationString(3945));
 
     }
 
-    public static void getDurationString (int minutes, int seconds) {
+    public static String getDurationString (int minutes, int seconds) {
         if (minutes < 0 || (seconds < 0 || seconds > 59)) {
-            System.out.println("Invalid value");
+            return INVALID_VALUE_MESSAGE;
         }
         int hours = minutes / 60;
         int remainingMinutes = minutes % 60;
@@ -29,18 +32,18 @@ public class SecondsMinutes_task {
         }
 
         // Printing result:
-        System.out.println(minutes + "m " + seconds + "s = " + hourString + " " + minutesString + " " + secondsString);
+        return minutes + "m " + seconds + "s = " + hourString + " " + minutesString + " " + secondsString;
     }
-    public static void getDurationString (int seconds) {
+    public static String getDurationString (int seconds) {
         if (seconds < 0) {
-            System.out.println("Invalid value");
+            return INVALID_VALUE_MESSAGE;
         }
 
         int minutes = seconds / 60;
         int remainingSeconds = seconds % 60;
 
-        System.out.println(seconds + " seconds = " + minutes + "m " + remainingSeconds + "s");
+        //System.out.println(seconds + " seconds = " + minutes + "m " + remainingSeconds + "s");
 
-        getDurationString(minutes, remainingSeconds);
+        return getDurationString(minutes, remainingSeconds);
     }
 }
