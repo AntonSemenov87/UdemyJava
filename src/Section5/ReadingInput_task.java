@@ -18,9 +18,8 @@ public class ReadingInput_task {
                 count++;
             } else {
                 System.out.println("Invalid Number");
-                scanner.nextLine();
             }
-
+            scanner.nextLine();
         }
         System.out.println("Sum of your numbers is: " + sum);
 
