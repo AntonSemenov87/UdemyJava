@@ -13,6 +13,13 @@ public class BankAccount_main {
         ba.deposit(50.99);
         ba.withdraw(151.00);
 
+        BankAccount myAcct = new BankAccount(1324567, 100.00, "Anton", 7732324567L);
+        System.out.println(myAcct.getCustomerName());
+        System.out.println(myAcct.getBalance());
+        System.out.println(myAcct.getAcctNum());
+        System.out.println(myAcct.getCustomerPhoneNumber());
+
+
 
     }
 }

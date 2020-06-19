@@ -6,6 +6,19 @@ public class BankAccount {
     private String customerName;
     private long customerPhoneNumber;
 
+    // creating Constructor
+    public BankAccount () {
+        System.out.println("Empty constructor called");
+    }
+
+    public BankAccount (long acctNum, double balance, String customerName, long customerPhoneNumber) {
+        System.out.println("Account constructor with parameters called");
+        this.acctNum = acctNum;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
 
     // getters and setters for each field
     public void setAcctNum(long acctNum) {
@@ -38,15 +51,15 @@ public class BankAccount {
 
     // additional methods
     public void deposit (double depositAmount) {
-        System.out.println("Balance was $" + balance + ", after deposit it's $" + (balance + depositAmount));
-        balance = balance + depositAmount;
+        System.out.println("Balance was $" + this.balance + ", after deposit it's $" + (this.balance + depositAmount));
+        this.balance += depositAmount;
     }
     public void withdraw (double withdrawAmount) {
-        if (balance - withdrawAmount < 0) {
+        if (this.balance - withdrawAmount < 0) {
             System.out.println("Insufficient funds on your account");
         } else {
-            System.out.println("Your balance was $" + balance + ", after withdrawal it's $" + (balance - withdrawAmount));
-            balance = balance - withdrawAmount;
+            System.out.println("Your balance was $" + this.balance + ", after withdrawal it's $" + (this.balance - withdrawAmount));
+            this.balance -= withdrawAmount;
         }
     }
 }
