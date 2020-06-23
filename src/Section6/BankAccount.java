@@ -4,14 +4,14 @@ public class BankAccount {
     private long acctNum;
     private double balance;
     private String customerName;
-    private long customerPhoneNumber;
+    private String customerPhoneNumber;
 
     // creating Constructor
     public BankAccount () {
         System.out.println("Empty constructor called");
     }
 
-    public BankAccount (long acctNum, double balance, String customerName, long customerPhoneNumber) {
+    public BankAccount (long acctNum, double balance, String customerName, String customerPhoneNumber) {
         System.out.println("Account constructor with parameters called");
         this.acctNum = acctNum;
         this.balance = balance;
@@ -42,10 +42,10 @@ public class BankAccount {
         return customerName;
     }
 
-    public void setCustomerPhoneNumber(long customerPhoneNumber) {
+    public void setCustomerPhoneNumber(String customerPhoneNumber) {
         this.customerPhoneNumber = customerPhoneNumber;
     }
-    public long getCustomerPhoneNumber() {
+    public String getCustomerPhoneNumber() {
         return customerPhoneNumber;
     }
 
