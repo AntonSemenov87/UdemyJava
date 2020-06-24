@@ -1,6 +1,6 @@
 package Section6;
 
-public class Main_car {
+public class Car_main {
     public static void main(String[] args) {
         Car porsche = new Car();
         System.out.println("Porsche model is " + porsche.getModel()); // line before we set the model name

@@ -6,11 +6,13 @@ public class BankAccount {
     private String customerName;
     private String customerPhoneNumber;
 
-    // creating Constructor
+    // creating Constructor #1
     public BankAccount () {
+        this(123456, 2.50, "default name", "default phone"); // this has to be first line in constructor!
         System.out.println("Empty constructor called");
     }
 
+    // creating Constructor #2
     public BankAccount (long acctNum, double balance, String customerName, String customerPhoneNumber) {
         System.out.println("Account constructor with parameters called");
         this.acctNum = acctNum;
@@ -19,6 +21,10 @@ public class BankAccount {
         this.customerPhoneNumber = customerPhoneNumber;
     }
 
+    // creating Constructor #3
+    public BankAccount(String customerName, String customerPhoneNumber) {
+        this (9999, 100.00, customerName, customerPhoneNumber); // called Constructor 2
+    }
 
     // getters and setters for each field
     public void setAcctNum(long acctNum) {

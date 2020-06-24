@@ -19,6 +19,11 @@ public class BankAccount_main {
         System.out.println(myAcct.getAcctNum());
         System.out.println(myAcct.getCustomerPhoneNumber());
 
+        BankAccount myAccount = new BankAccount("Anton", "7738784543");
+        System.out.println(myAccount.getCustomerName());
+        System.out.println(myAccount.getCustomerPhoneNumber());
+        System.out.println(myAccount.getAcctNum());
+
 
 
     }
