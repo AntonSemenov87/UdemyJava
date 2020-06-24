@@ -10,8 +10,16 @@ public class VipCustomer {
         this ("default name", 0.00, "default@address.com");
     }
 
+    // 2nd Constructor
     public VipCustomer (String name, double creditLimit) {
         this.name = name;
         this.creditLimit = creditLimit;
+    }
+
+    // 3rd Constructor
+    public VipCustomer(String name, double creditLimit, String emailAddress) {
+        this.name = name;
+        this.creditLimit = creditLimit;
+        this.emailAddress = emailAddress;
     }
 }
