@@ -12,8 +12,7 @@ public class VipCustomer {
 
     // 2nd Constructor
     public VipCustomer (String name, double creditLimit) {
-        this.name = name;
-        this.creditLimit = creditLimit;
+        this(name, creditLimit, "unknown@email.com");
     }
 
     // 3rd Constructor
@@ -21,5 +20,17 @@ public class VipCustomer {
         this.name = name;
         this.creditLimit = creditLimit;
         this.emailAddress = emailAddress;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getCreditLimit() {
+        return creditLimit;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
     }
 }
