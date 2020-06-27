@@ -7,4 +7,14 @@ public class Cat extends Animal {
         super(name, 1, 1, size, weight);
         this.breed = breed;
     }
+    private void chew () {
+        System.out.println("Cat can chew");
+    }
+
+    @Override
+    public void eat() {
+        super.eat();
+        System.out.println("Next libe is from private chew()");
+        chew();
+    }
 }
