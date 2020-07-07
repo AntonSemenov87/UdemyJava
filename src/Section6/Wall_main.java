@@ -2,7 +2,7 @@ package Section6;
 
 public class Wall_main {
     public static void main(String[] args) {
-        Wall wall1 = new Wall(5,4);
+        Wall_class wall1 = new Wall_class(5,4);
         System.out.println("area = " + wall1.getArea());
 
         wall1.setHeight(-1.5);

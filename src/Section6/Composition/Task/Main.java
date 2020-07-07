@@ -15,6 +15,8 @@ public class Main {
 
         Bedroom bedroom = new Bedroom("Anton's", wall1, wall2, wall3, wall4, ceiling, bed, lamp);
 
-        lamp.turnOn();
+        //lamp.turnOn();
+        bedroom.makeBed();
+        bedroom.getLamp().turnOn();
     }
 }

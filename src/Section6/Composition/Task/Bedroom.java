@@ -1,6 +1,6 @@
 package Section6.Composition.Task;
 
-import Section6.Wall;
+import Section6.Wall_class;
 
 public class Bedroom {
     private String name;

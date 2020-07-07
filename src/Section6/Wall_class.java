@@ -1,15 +1,15 @@
 package Section6;
 
-public class Wall {
+public class Wall_class {
     private double width;
     private double height;
 
     // 1st Constructor (no-args)
-    public Wall() {
+    public Wall_class() {
     }
 
     // 2nd Constructor
-    public Wall(double width, double height) {
+    public Wall_class(double width, double height) {
         if (width < 0) {
             this.width = 0;
         } else {
