@@ -18,10 +18,24 @@ public class Printer {
 
     public int addToner (int tonerAmount) {
         if (tonerLevel > 0 && tonerLevel <= 100) {
-            return this.tonerLevel += tonerAmount;
+            if (this.tonerLevel + tonerAmount > 100) {
+                return -1;
+            }
+            this.tonerLevel += tonerAmount;
+            return this.tonerLevel;
         } else {
             return -1;
         }
+    }
+
+    public int printPages (int pages) {
+        int pagesToPrint = (pages / 2) + (pages % 2);
+        if (this.duplex) {
+            pagesToPrint /= 2;
+            System.out.println("Printing in duplex mode");
+        }
+        this.pagesPrinted += pagesToPrint;
+        return pagesToPrint;
     }
 
 }
