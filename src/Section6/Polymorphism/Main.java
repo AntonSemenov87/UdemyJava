@@ -10,6 +10,10 @@ class Movie {
     public String plot () {
         return "No plot here";
     }
+
+    public String getName() {
+        return name;
+    }
 }
 
 class Jaws extends Movie {
@@ -64,12 +68,16 @@ class Forgettable extends Movie {
 
 public class Main {
     public static void main(String[] args) {
+        for (int i=1; i < 11; i++) {
+            Movie movie = randomMovie();
+            System.out.println("Movie #" + i + ": " + movie.getName() + "\n" + "Plot: " + movie.plot() + "\n");
+        }
 
     }
 
     public static Movie randomMovie () {
         int randomNumber = (int) (Math.random() * 5) + 1;
-        System.out.println("random number generated was " + randomNumber);
+        System.out.println("Random number generated was " + randomNumber);
         switch (randomNumber) {
             case 1:
                 return new Jaws();
