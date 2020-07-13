@@ -87,17 +87,17 @@ class Porsche extends Car {
 
     @Override
     public String startEngine() {
-        return "Mitsubishi -> startEngine()";
+        return getClass().getSimpleName() + " -> startEngine()";
     }
 
     @Override
     public String accelerate() {
-        return "Mitsubishi -> accelerate()";
+        return "Porsche -> accelerate()";
     }
 
     @Override
     public String brake() {
-        return "Mitsubishi -> brake()";
+        return "Porsche -> brake()";
     }
 }
 
