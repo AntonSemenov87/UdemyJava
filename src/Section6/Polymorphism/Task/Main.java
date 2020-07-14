@@ -2,17 +2,17 @@ package Section6.Polymorphism.Task;
 
 class Car {
     // fields
-    private boolean engine;
+    private boolean engine = true;
     private int cylinders;
     private String name;
-    private int wheels;
+    private int wheels = 4;
 
     // constructor
     public Car(int cylinders, String name) {
         this.cylinders = cylinders;
         this.name = name;
-        this.wheels = 4;
-        this.engine = true;
+        //this.wheels = 4;
+       // this.engine = true;
     }
     // getters:
     public int getCylinders() {
