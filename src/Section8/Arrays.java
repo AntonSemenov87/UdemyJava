@@ -17,12 +17,17 @@ public class Arrays {
         System.out.println("Method 2 - arr2 [7] = " + arr2[7]);
 
         // 3rd way to initialize array
-        int [] arr3 = new int[25];
+        int [] arr3 = new int[10];
         for (int i = 0; i < arr3.length; i++) {
             arr3[i] = i+1;
-            System.out.println("element " + i + ", value is " + arr3[i]);
         }
+        printArray(arr3);
 
+    }
 
+    public static void printArray(int [] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Element " + i + ", value is " + array[i]);
+        }
     }
 }
