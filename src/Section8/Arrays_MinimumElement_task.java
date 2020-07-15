@@ -10,7 +10,8 @@ public class Arrays_MinimumElement_task {
         scanner.nextLine();
 
         int [] myArray = readIntegers(count);
-        System.out.println(findMin(myArray));
+        int minElementFound = findMin(myArray);
+        System.out.println(minElementFound);
 
     }
     public static int [] readIntegers (int count) {
