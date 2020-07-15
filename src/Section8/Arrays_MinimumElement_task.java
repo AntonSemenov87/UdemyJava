@@ -11,7 +11,7 @@ public class Arrays_MinimumElement_task {
 
         int [] myArray = readIntegers(count);
         int minElementFound = findMin(myArray);
-        System.out.println(minElementFound);
+        System.out.println("Min element of the array is " + minElementFound);
 
     }
     public static int [] readIntegers (int count) {
