@@ -19,6 +19,16 @@ public class GroceryList {
     }
 
     // method for modifying items in list
+    public void modifyGroceryList (int position, String newItem) {
+        groceryList.set(position, newItem);
+        System.out.println("Grocery item " + position + " has been modified to " + newItem);
+    }
+
+    //method for removing an item
+    public void removeItem (int position) {
+        String theItem = groceryList.get(position);
+        groceryList.remove(position);
+    }
 
     public static void main(String[] args) {
 
