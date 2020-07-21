@@ -25,13 +25,13 @@ public class GroceryList_Main {
                     addItem();
                     break;
                 case 3:
-                    findItem();
+                    modifyItem();
                     break;
                 case 4:
                     removeItem();
                     break;
                 case 5:
-                    findItem();
+                    searchForItem();
                     break;
                 case 6:
                     quit = true;
@@ -46,7 +46,7 @@ public class GroceryList_Main {
         System.out.println("\t 0 - to print choice options");
         System.out.println("\t 1 - to print the list of grocery items");
         System.out.println("\t 2 - To add an item to the list");
-        System.out.println("\t 3 - To midify an itme in the list");
+        System.out.println("\t 3 - To modify an item in the list");
         System.out.println("\t 4 - To remove an item from the list");
         System.out.println("\t 5 - To search fro an item in the list");
         System.out.println("\t 6 - To quit the application");
@@ -65,4 +65,25 @@ public class GroceryList_Main {
         String newItem = scanner.nextLine();
         groceryList.modifyGroceryList(itemNumber-1, newItem);
     }
+
+    public static void removeItem () {
+        System.out.println("Enter number of item to be removed: ");
+        int position = scanner.nextInt();
+        scanner.nextLine();
+        groceryList.removeGroceryItem(position - 1);
+    }
+
+    public static void  searchForItem () {
+        System.out.println("Enter name of item you're looking for: ");
+        String nameOfItem = scanner.nextLine();
+        if (groceryList.findItem(nameOfItem) != null) {
+            System.out.println("Found " + nameOfItem + " in the list");
+        } else {
+            System.out.println("Item you searched for is NOT in the shopping list");
+        }
+
+    }
+
+
+
 }
