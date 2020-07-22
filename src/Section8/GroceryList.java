@@ -31,6 +31,13 @@ public class GroceryList {
         System.out.println("Grocery item " + (position+1) + " has been modified to " + newItem);
     }
 
+    public void removeGroceryItem (String item) {
+        int position = findItem(item);
+        if (position >= 0) {
+            modifyGroceryItem(position, item);
+        }
+    }
+
     //method for removing an item
     public void removeGroceryItem (int position) {
         String theItem = groceryList.get(position);
