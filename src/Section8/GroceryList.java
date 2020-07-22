@@ -17,9 +17,16 @@ public class GroceryList {
             System.out.println((i+1) + ". " + groceryList.get(i));
         }
     }
+    public void modifyGroceryItem(String newItem) {
+        int position = findItem(newItem);
+        if (position >= 0) {
+            modifyGroceryItem(position, newItem);
+        }
+    }
+
 
     // method for modifying items in list
-    public void modifyGroceryList (int position, String newItem) {
+    public void modifyGroceryItem(int position, String newItem) {
         groceryList.set(position, newItem);
         System.out.println("Grocery item " + (position+1) + " has been modified to " + newItem);
     }
@@ -30,13 +37,9 @@ public class GroceryList {
         groceryList.remove(position);
     }
 
-    public String findItem (String searchItem) {
+    public int findItem (String searchItem) {
     //    boolean exists = groceryList.contains(searchItem);
-       int position = groceryList.indexOf(searchItem);
-       if (position >= 0) {
-           return groceryList.get(position);
-       }
-       return null;
+        return groceryList.indexOf(searchItem);
     }
 
 

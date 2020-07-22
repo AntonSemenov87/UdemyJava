@@ -63,7 +63,7 @@ public class GroceryList_Main {
         scanner.nextLine();
         System.out.println("Enter replacement item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryList(itemNumber-1, newItem);
+        groceryList.modifyGroceryItem(itemNumber-1, newItem);
     }
 
     public static void removeItem () {
