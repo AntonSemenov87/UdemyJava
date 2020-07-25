@@ -8,20 +8,17 @@ import java.util.ListIterator;
 public class Demo {
     public static void main(String[] args) {
         LinkedList<String> placesToVisit = new LinkedList<String>();
-        placesToVisit.add("Sydney");
-        placesToVisit.add("Melbourne");
-        placesToVisit.add("Brisbane");
-        placesToVisit.add("Perth");
-        placesToVisit.add("Canberra");
-        placesToVisit.add("Adaleide");
-        placesToVisit.add("Darwin");
-
+        addInOrder(placesToVisit, "Sydney");
+        addInOrder(placesToVisit, "Melbourne");
+        addInOrder(placesToVisit, "Brisbane");
+        addInOrder(placesToVisit, "Perth");
+        addInOrder(placesToVisit, "Canberra");
+        addInOrder(placesToVisit, "Adelaide");
+        addInOrder(placesToVisit, "Darwin");
         printList(placesToVisit);
 
-        placesToVisit.add(1,"Alice Springs");
-        printList(placesToVisit);
-
-        placesToVisit.remove(4);
+        addInOrder(placesToVisit, "Alice Springs");
+        addInOrder(placesToVisit, "Darwin");
         printList(placesToVisit);
 
 
@@ -55,5 +52,6 @@ public class Demo {
             }
         }
         stringListIterator.add(newCity);
+        return true;
     }
 }
