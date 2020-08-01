@@ -1,4 +1,4 @@
-package RandomStuff;
+package RandomStuff.HashMap_practice;
 
 import java.util.HashMap;
 
