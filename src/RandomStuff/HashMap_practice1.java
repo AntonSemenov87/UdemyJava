@@ -2,7 +2,7 @@ package RandomStuff;
 
 import java.util.HashMap;
 
-public class HashMap_practice {
+public class HashMap_practice1 {
     public static void main(String[] args) {
 
         // HashMaps don't have an order, all key+values are not in ordered list
