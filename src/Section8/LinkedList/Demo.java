@@ -56,6 +56,7 @@ public class Demo {
     private static void visit (LinkedList cities) {
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
+        boolean goingForward = true;
         ListIterator<String> listIterator = cities.listIterator();
         if (cities.isEmpty()) {
             System.out.println("No cities in the itirenary");
@@ -73,17 +74,31 @@ public class Demo {
                     quit = true;
                     break;
                 case 1:
+                    if (!goingForward) {
+                        if (listIterator.hasNext()) {
+                            listIterator.next();
+                        }
+                    }
                     if (listIterator.hasNext()) {
                         System.out.println("now visiting " + listIterator.next());
                     } else {
                         System.out.println("Reached the end of the list");
+                        goingForward = false;
                     }
                     break;
                 case 2:
+                    if(goingForward) {
+                        if (listIterator.hasPrevious()) {
+                        listIterator.previous();
+                        }
+                        goingForward = false;
+                        }
+
                     if (listIterator.hasPrevious()) {
                         System.out.println("Now visiting " + listIterator.previous());
                     } else {
                         System.out.println("We're at the start of the list");
+                        goingForward = true;
                     }
                 case 3:
                     printMenu();
