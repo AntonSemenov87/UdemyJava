@@ -2,7 +2,6 @@ package OCAstuff;
 
 public class _7 {
     public static void main(String[] args) {
-<<<<<<< Updated upstream
         int $calories = 434;
         short numPets = 5;
         int numGrains = 5;
@@ -11,7 +10,6 @@ public class _7 {
         byte x =  5;
         byte y = 4;
         int z = x + y;
-=======
         String a = "";
         a += 2;
         a += 'c';
@@ -26,6 +24,5 @@ public class _7 {
         total += letters.substring(6, 6).length();
         total += letters.substring(6, 5).length();
         System.out.println(total); // exception StringIndexOutOfBoundsException: start 6, end 5
->>>>>>> Stashed changes
     }
 }
