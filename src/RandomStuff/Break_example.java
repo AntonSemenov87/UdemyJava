@@ -21,5 +21,18 @@ public class Break_example {
             System.out.println(numbers[j]);
         }
 
+        int z = 0;
+        switch(z) {
+            case 0:
+                System.out.println("Zero");
+                break;
+            case 1:
+                System.out.println("One");
+                break;
+            default:
+                System.out.println("wrong");
+                break;
+        }
+
     }
 }
