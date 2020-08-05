@@ -12,16 +12,16 @@ public class CurrentTime {
 //        LocalDate localDate = LocalDate.of(1987, 06, 04);
 //        System.out.println("LocalDate: " + localDate);
 
-        SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss");
+        SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss"); // 24-hour format
         System.out.println(timeFormat.format(currentDate));
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy"); // 08/05/2020
         System.out.println(dateFormat.format(currentDate));
 
-        SimpleDateFormat dayOfWeekFormat = new SimpleDateFormat("EEEE");
+        SimpleDateFormat dayOfWeekFormat = new SimpleDateFormat("EEEE"); // Wednesday
         System.out.println(dayOfWeekFormat.format(currentDate));
 
-        SimpleDateFormat clockFromat = new SimpleDateFormat("h:mm a");
+        SimpleDateFormat clockFromat = new SimpleDateFormat("h:mm a"); // 12-hour format
         System.out.println(clockFromat.format(currentDate));
     }
 }
