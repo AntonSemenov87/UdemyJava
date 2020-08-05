@@ -9,6 +9,9 @@ public class CurrentTime {
         Date currentDate = new Date();
         System.out.println(currentDate);
 
+//        LocalDate localDate = LocalDate.of(1987, 06, 04);
+//        System.out.println("LocalDate: " + localDate);
+
         SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss");
         System.out.println(timeFormat.format(currentDate));
 
