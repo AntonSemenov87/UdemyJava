@@ -1,4 +1,4 @@
-package RandomStuff;
+package AlexLee_youtube;
 
 public class Strings_usage {
     public static void main(String[] args) {

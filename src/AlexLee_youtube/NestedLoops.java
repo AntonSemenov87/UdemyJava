@@ -1,4 +1,4 @@
-package RandomStuff;
+package AlexLee_youtube;
 
 public class NestedLoops {
     public static void main(String[] args) {

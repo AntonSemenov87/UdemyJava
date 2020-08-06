@@ -1,6 +1,6 @@
-package RandomStuff;
+package AlexLee_youtube;
 
-public class SwitchCase {
+public class SwitchCase1 {
     public static void main(String[] args) {
         int day = 0;
 

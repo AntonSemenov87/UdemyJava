@@ -1,4 +1,4 @@
-package RandomStuff;
+package AlexLee_youtube;
 
 public class ReturnStatement {
     public static void main(String[] args) {
