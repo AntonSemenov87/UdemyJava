@@ -21,7 +21,7 @@ public class CurrentTime {
         SimpleDateFormat dayOfWeekFormat = new SimpleDateFormat("EEEE"); // Wednesday
         System.out.println(dayOfWeekFormat.format(currentDate));
 
-        SimpleDateFormat clockFromat = new SimpleDateFormat("h:mm a"); // 12-hour format
-        System.out.println(clockFromat.format(currentDate));
+        SimpleDateFormat clockFormat = new SimpleDateFormat("h:mm a"); // 12-hour format
+        System.out.println(clockFormat.format(currentDate));
     }
 }
