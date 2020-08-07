@@ -2,7 +2,7 @@ package AlexLee_youtube;
 
 import java.util.Scanner;
 
-public class NullPointerException {
+public class NullPointerException extends Throwable {
     public static void main(String[] args) {
 
         String a = null;

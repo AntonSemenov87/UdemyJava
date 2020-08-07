@@ -1,4 +1,4 @@
-package AlexLee_youtube.HashMap_practice;
+package AlexLee_youtube;
 
 public class Break_nestedLoop {
     public static void main(String[] args) {
