@@ -39,6 +39,13 @@ public class Stacks_examples {
         System.out.println(tower.contains('S')); // false
         System.out.println(tower.empty()); // false --> it's not empty
         System.out.println(tower.get(1)); // getting by index
+        System.out.println(tower.get(0)); // R
+        // replacing character at specific index:
+        tower.set(1, 'P');
+        System.out.println(tower); // [R, P, Y]
+        System.out.println(tower.size()); // 3
+        System.out.println(tower.search('Y')); // returns 1 --> present
+        System.out.println(tower.search('Z')); // return -1 --> NOT present
 
 
     }
