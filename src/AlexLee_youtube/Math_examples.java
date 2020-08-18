@@ -4,8 +4,8 @@ public class Math_examples {
     public static void main(String[] args) {
 
         System.out.println(Math.class);
-        System.out.println(Math.E);
-        System.out.println(Math.PI);
+        System.out.println(Math.E); // 2.718281828459045
+        System.out.println(Math.PI); // 3.141592653589793
         System.out.println(Math.abs(-12));
         System.out.println(Math.acos(.54)); // between 0 and 1 --> 1.000359....
         System.out.println(Math.acos(1.1)); // NaN --> not a number
