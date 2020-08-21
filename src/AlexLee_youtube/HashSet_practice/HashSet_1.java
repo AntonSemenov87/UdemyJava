@@ -6,7 +6,7 @@ import java.util.Iterator;
 public class HashSet_1 {
     public static void main(String[] args) {
 
-        // in HashSet you cannot rely on position of elements in HashSet (NOT ordered)
+        // in HashSet you cannot rely on position of elements (NOT ordered)
 
         HashSet<Integer> hashbrowns = new HashSet<Integer>();
         hashbrowns.add(13);
