@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class PrimeNumber {
     public static void main(String[] args) {
 
-        System.out.println(findPrimes(1, 100));
+        System.out.println(findPrimes(1, 1000000000));
 
     }
 
