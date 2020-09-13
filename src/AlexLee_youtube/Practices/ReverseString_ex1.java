@@ -7,5 +7,13 @@ public class ReverseString_ex1 {
         StringBuilder rev = new StringBuilder(str);
         rev.reverse();
         System.out.println(rev);
+
+
+        String a = "Semenov";
+        String b = "";
+        for (int i = a.length()-1; i >= 0 ; i--) {
+            b += a.charAt(i);
+        }
+        System.out.println(b);
     }
 }
