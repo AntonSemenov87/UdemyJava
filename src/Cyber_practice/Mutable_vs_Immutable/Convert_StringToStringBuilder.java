@@ -1,4 +1,4 @@
-package Mutable_vs_Immutable;
+package Cyber_practice.Mutable_vs_Immutable;
 
 public class Convert_StringToStringBuilder {
     public static void main(String[] args) {
