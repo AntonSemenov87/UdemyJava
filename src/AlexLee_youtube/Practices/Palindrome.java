@@ -1,6 +1,5 @@
 package AlexLee_youtube.Practices;
 
-import jdk.swing.interop.SwingInterOpUtils;
 
 public class Palindrome {
     public static void main(String[] args) {
