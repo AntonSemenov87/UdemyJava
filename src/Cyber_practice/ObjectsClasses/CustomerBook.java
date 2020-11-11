@@ -6,12 +6,15 @@ public class CustomerBook {
     String author;
     int pages;
 
+    public CustomerBook (){
+
+    }
 
     public CustomerBook (String title, String author, int pages) {
 
     }
 
-    public CustomerBook (){}
+
 
     public void customerBookInfo(){
         System.out.println("'" + this.title  + "' " + this.author + " " + this.pages);
