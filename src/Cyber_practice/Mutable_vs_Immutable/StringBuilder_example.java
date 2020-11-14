@@ -6,7 +6,7 @@ public class StringBuilder_example {
         StringBuilder sb = new StringBuilder("Porsche");
 
         // methods:
-        // concatination --> APPEND
+        // concatenation --> APPEND
         sb.append(" Macan ");
         System.out.println(sb);
         sb.append(900 + 11);
