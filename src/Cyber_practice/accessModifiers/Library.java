@@ -1,4 +1,4 @@
-package accessModifiers;
+package Cyber_practice.accessModifiers;
 
 import Cyber_practice.ObjectsClasses.Author;
 

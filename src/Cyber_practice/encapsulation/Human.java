@@ -1,4 +1,4 @@
-package accessModifiers;
+package Cyber_practice.encapsulation;
 
 public class Human {
     private String name;

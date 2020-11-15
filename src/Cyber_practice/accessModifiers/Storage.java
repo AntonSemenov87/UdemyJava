@@ -1,4 +1,4 @@
-package accessModifiers;
+package Cyber_practice.accessModifiers;
 
 public class Storage {
     public static void main(String[] args) {

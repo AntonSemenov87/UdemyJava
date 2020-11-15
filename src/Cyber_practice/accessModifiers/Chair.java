@@ -1,4 +1,4 @@
-package accessModifiers;
+package Cyber_practice.accessModifiers;
 
 public class Chair {
     private int size;
