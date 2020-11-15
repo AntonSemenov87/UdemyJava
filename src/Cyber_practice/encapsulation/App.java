@@ -15,6 +15,7 @@ public class App {
         numberOfApps = 0;
     }
 
+
     private String name;
     private String category;
     private int rating;
@@ -23,6 +24,7 @@ public class App {
     private ArrayList<String> reviews;
 
     public App (String name, String category, double size) {
+        this.reviews = new ArrayList<>();
         //this.name = name;
         this.setName(name); // same thing as line 26, used when we have if/else conditions in method AND here in Constructor
         this.category = category;
@@ -43,13 +45,16 @@ public class App {
     }
 
     public void info(){
-        System.out.println("Name: " + this.name + "\n Category: " + this.category + "\nRating: " + this.rating +
+        System.out.println("Name: " + this.name + "\nCategory: " + this.category + "\nRating: " + this.rating +
                 "\nDescription: " + this.description + "\nSize: " + this.size);
     }
 
     public void setReview(String message) {
         if (message.length() > 3){
-            reviews.add(message);
+            this.reviews.add(message);
+            System.out.println("Thank you for your review");
+        } else {
+            System.out.println("Sorry, your review is invalid. Try again.");
         }
     }
 
