@@ -7,7 +7,7 @@ public class PetSmart {
         husky.age = 3;
         husky.color = "black/white";
         husky.weight = 101.01;
-        husky.bark();
+        husky.makeNoise();
         husky.eat();
         husky.info();
         System.out.println("---------------***---------------");

@@ -1,6 +1,6 @@
 package Cyber_practice.inheritance;
 
-public class Dog {
+public class Dog extends Animal {
 
     int age;
     String breed;
@@ -8,8 +8,8 @@ public class Dog {
     double weight;
     String color;
 
-    public void bark(){
-        System.out.println("Dog is barking");
+    public void makeNoise(){
+        System.out.println("Woooof");
     }
 
     public void eat(){
