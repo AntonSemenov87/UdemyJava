@@ -21,7 +21,8 @@ public class ArrayList_vs_HashSet {
         System.out.println(set2);
 
         Set<String> set3 = new TreeSet<>();
-        set3.addAll( Arrays.asList("D", "D", "B", "E", "B", "C", "C", "A"));
+        set3.addAll( Arrays.asList("D", "D", "B", "E", "B", "C", "C", "A")); // will sort and not allow duplicates
+        set3.add(null); // does not allow null
         System.out.println(set3);
 
     }
