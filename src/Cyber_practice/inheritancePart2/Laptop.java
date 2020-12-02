@@ -1,5 +1,7 @@
 package Cyber_practice.inheritancePart2;
 
+import Cyber_practice.inheritance.Dog;
+
 public class Laptop {
 
 //    public Laptop(){
@@ -23,6 +25,12 @@ public class Laptop {
 
     public void turnOn(){
         System.out.println("Laptop is turning on");
+    }
+
+    public Dog getMyDog(){
+        System.out.println("Returning some dog");
+        Dog dog = new Dog();
+        return dog;
     }
 
 
