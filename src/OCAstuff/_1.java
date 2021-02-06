@@ -10,7 +10,7 @@ public class _1 {
         list.add(200);
         list.add(100);
         list.add(200);
-        list.remove(100);
+        list.remove(1);
         System.out.println(list);
     }
 }
